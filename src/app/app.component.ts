@@ -12,8 +12,8 @@ export class AppComponent implements OnInit{
 
   constructor(private rs: RestService){}
 
-  columns = ["Name", "Org", "Availibility", "Visit Duration"];
-  index = ["name", "org", "availibility", "visitDurationInMin"];
+  columns = ["Name", "Org"];
+  index = ["name", "org"];
 
   doctors: Doctors[] = [];
 

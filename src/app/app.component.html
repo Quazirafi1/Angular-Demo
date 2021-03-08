@@ -1,3 +1,4 @@
+<router-outlet></router-outlet>
 <h1>This is the list of Doctors</h1>
 
 <table id="doctors">
@@ -9,7 +10,7 @@
 
   <tr *ngFor="let doc of doctors">
     <td *ngFor="let col of index">
-      {{doc[col]}}
+      <a routerLink="/doctor/{{doc.name}}" routerLinkActive="active">{{doc[col]}}</a>
     </td>
   </tr>
 
